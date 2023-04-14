@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Ginto';
+    src: url(./Ginto\ \(official\ discord\ font\));
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url(./Whitney\ \(official\ discord\ typing\ font\));
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+/* HEADER STRUCTURE */ 
+#head{
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+header .col{
+    padding: 5px 10px;
+    background-color: goldenrod;
+    border: 1px dashed black;
+}
+.logo{
+    width: 20%;
+}
+
+.menu{
+    width:60%;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.login{
+    width: 20%;
+    text-align: right;
+}
+/* FINE HEADER STRUCTURE */ 
+
+/* JUMBODRONE SECTION */
+#jumbodrone{
+    width: 100%;
+    background-color: blue;
+}
+
+#jumbodrone .col{
+    background-color: pink;
+    border: 1px dashed black;
+    height: 250px;
+    width: 70%;
+}
+/* END JUMBODRONE SECTION */
+
+/* MAIN LAYOUT */
+ /* MAIN SECTIONS */
+main section{
+    padding:30px 0;
+}
+
+main section:nth-of-type(2n+3){
+    background-color: lightgray;
+}
+    /* END MAIN SECTIONS */
+    /* MAIN COLLUMNS LAYOUT */
+main .col_40, .col_60, .col_100{
+    height: 300px;
+    border: 1px dashed black;
+}
+
+.col_40{
+    width: 40%;
+    background-color: pink;
+}
+
+.col_60{
+    width: 60%;
+    background-color: rgb(25, 127, 186);
+}
+
+.col_100{
+    width: 100%;
+    background-color: green;
+    height: 450px;
+}
+    /* END MAIN COLLUMNS LAYOUT */
+/*END MAIN LAUOUT */
+/* FOOTER LAYOUT */
+footer section{
+    background-color: rgb(31, 29, 29);
+}
+    /* SECTION #CONTATTI */
+
+#contatti{
+    padding:3px 0px 20px 0px;
+}
+
+#contatti .col_15{
+    height: 450px;
+    width: calc(70% / 4);
+    background-color: cyan;
+    border: 1px dashed white;
+}
+
+#contatti .col_30{
+    height: 450px;
+    width: 30%;
+    background-color: pink;
+    border: 1px dashed black;
+}
+    /*FINE SECTION CONTATTI */
+
+    /* SECTION #END */
+#end{
+    padding: 15px 0px 0px 0px
+}
+
+#end .col{
+    width: 100%;
+    padding: 10px 0;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#end .logo, #end .login{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border: 1px dashed black;
+    background-color: pink;
+}
+
+#end input{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+    /* FINE SECTION END */
+/* FINE FOOTER */
