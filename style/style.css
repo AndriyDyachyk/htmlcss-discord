@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* TEXT STYLES */
 @font-face {
     font-family: 'Ginto';
     src: url(./Ginto\ \(official\ discord\ font\));
@@ -14,10 +15,35 @@
     src: url(./Whitney\ \(official\ discord\ typing\ font\));
 }
 
+header, #jumbodrone, footer, a{
+    color: white;
+}
+
+h1{
+    font-size: 56px;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Arial';
+    line-height: 1.7em;
+}
+
+body{
+    font-family: 'Arial';
+
+}
+
+.container.head{
+    width: 1180px;
+    margin: 0 auto;
+}
+
 .container{
     width: 70%;
     margin: 0 auto;
 }
+/* TEXT STYLES */
 
 .row{
     display: flex;
@@ -28,53 +54,116 @@
 
 /* HEADER STRUCTURE */ 
 #head{
-    background-color: lightskyblue;
-    padding: 10px;
+    background-color: rgb(42, 94, 232);
 }
 
 header .col{
     padding: 5px 10px;
-    background-color: goldenrod;
-    border: 1px dashed black;
+    height: 80px;
+    display: flex;
 }
 .logo{
     width: 20%;
+    align-items: center;
 }
 
 .menu{
     width:60%;
-    text-align: center;
+    text-align:center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .menu a{
     text-decoration: none;
-    color: black;
 }
 
-.login{
+div.login{
     width: 20%;
-    text-align: right;
+    justify-content: end;
+    align-items: center;
+}
+
+button.login{
+    background-color: #fff;
+    color: #23272A;
+    height: fit-content;
+    padding: 6px 12px;
+    border: 0px;
+    border-radius: 24px;
+    font-size: 16px;
 }
 /* FINE HEADER STRUCTURE */ 
 
 /* JUMBODRONE SECTION */
 #jumbodrone{
     width: 100%;
-    background-color: blue;
+    background-image: url(../img/jumbo.png);
+    background-position-x: center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+    background-color: rgb(42, 94, 232);
+
+}
+
+
+
+#jumbodrone .row{
+    padding: 99px 0px 120px 0px;
 }
 
 #jumbodrone .col{
-    background-color: pink;
-    border: 1px dashed black;
-    height: 250px;
-    width: 70%;
+    text-align: center;
+    width: 65%;
 }
+
+#jumbodrone p{
+    margin-top: 40px;
+}
+
+.button_container{
+    width: 100%;
+}
+
+button.apri_nel_tuo_browser{
+    background-color: #23272A;
+    padding:16px 32px;
+    margin: 24px 24px 0px 0px;
+    border: 0px solid;
+    border-radius: 24px;
+    font-size: 20px;
+    color: #fff;
+}
+
+span.down_arrow{
+    content: url(../img/arrow-down-long-solid.svg);
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px ;
+    color: #23272A ;
+}
+
+a.scarica_per_mac{
+    background-color: #fff;
+    padding:16px 32px 16px 24px;
+    margin: 24px 24px 0px 0px;
+    border: 0px solid;
+    border-radius: 24px;
+    text-decoration: none;
+    color: #23272A;
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
+
 /* END JUMBODRONE SECTION */
 
 /* MAIN LAYOUT */
  /* MAIN SECTIONS */
 main section{
-    padding:30px 0;
+    padding:0px 0px 30px 0px;
 }
 
 main section:nth-of-type(2n+3){
